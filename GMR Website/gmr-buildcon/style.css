@@ -826,29 +826,67 @@ strong { color: var(--ink); font-weight: 600; }
 }
 
 @media (max-width: 860px) {
-  :root { --header-h: 72px; }
-  .nav-toggle { display: inline-flex; }
+  /* Mobile header is now two rows: [brand + actions] / [nav links] - so account for both */
+  :root { --header-h: 124px; }
+
+  /* Hamburger is no longer needed - the full nav is visible at all times */
+  .nav-toggle { display: none; }
+  .nav-backdrop { display: none; }
+
+  /* Site header wraps into two rows */
+  .site-header__inner {
+    flex-wrap: wrap;
+    row-gap: .6rem;
+    gap: .9rem;
+  }
+  .brand { order: 1; flex: 0 0 auto; }
+  .header-actions { order: 2; gap: .55rem; flex: 0 0 auto; margin-left: auto; }
+
+  /* Primary nav: full second row, override the slide-in panel styling */
   .primary-nav {
-    position: fixed; inset: 0 0 0 auto;
-    width: min(82vw, 360px);
-    background: var(--paper);
-    padding: calc(var(--header-h) + 1.5rem) 2rem 2rem;
-    transform: translateX(100%);
-    transition: transform .4s var(--ease);
-    box-shadow: var(--shadow-lg);
-    overflow-y: auto;
+    order: 3;
+    position: static;
+    width: 100%;
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    overflow: visible;
   }
-  .primary-nav.is-open { transform: translateX(0); }
-  .primary-nav ul { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
-  .primary-nav a { font-size: 1.1rem; }
-  .header-phone { display: none; }
-  .header-cta { display: none; }
-  .nav-backdrop {
-    position: fixed; inset: 0; background: rgba(21,57,44,.4);
-    opacity: 0; visibility: hidden; transition: opacity .4s var(--ease); z-index: 99;
-    -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+  .primary-nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    width: 100%;
+    flex-wrap: wrap;
   }
-  .nav-backdrop.is-open { opacity: 1; visibility: visible; }
+  .primary-nav a { font-size: .98rem; }
+
+  /* Keep the gold "Call" pill (icon + Call label) and shorter Brochure pill, both visible */
+  .header-phone {
+    background: var(--gold);
+    color: var(--forest-ink);
+    padding: .5rem .85rem;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: .9rem;
+    gap: .4rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .header-phone svg { color: var(--forest-ink); }
+  .header-phone span { display: none; }
+  .header-phone::after {
+    content: "Call";
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+  .header-cta {
+    padding: .5rem .85rem;
+    font-size: .85rem;
+    gap: .4rem;
+  }
 
   .split { grid-template-columns: 1fr; }
   .split__media { order: -1; }
@@ -866,6 +904,35 @@ strong { color: var(--ink); font-weight: 600; }
   .hero__cta .btn { justify-content: center; }
   .media-badge { left: 12px; }
   .brand__tag { display: none; }
+
+  /* Tighter nav links + actions for narrow phones (everything still visible) */
+  .primary-nav ul { gap: 1rem; }
+  .primary-nav a { font-size: .92rem; }
+  .header-actions { gap: .4rem; }
+  .header-cta { padding: .45rem .7rem; font-size: .8rem; }
+  .header-cta svg { width: 13px; height: 13px; }
+  .header-phone { padding: .45rem .75rem; font-size: .85rem; }
+
+  /* Tighter brand on tiny screens (just the mark + name, "Real Estate" tag is already hidden) */
+  .brand__mark { width: 38px; height: 38px; }
+  .brand__name { font-size: 1.05rem; }
+
+  /* Hero eyebrow: stop the flanking rules from wrapping the long location text */
+  .hero__eyebrow { font-size: .68rem; gap: .5rem; letter-spacing: .15em; flex-wrap: nowrap; }
+  .hero__eyebrow::before, .hero__eyebrow::after { width: 14px; flex: none; }
+
+  /* Contact call CTA: shrink the big number so it never overflows narrow screens */
+  .call-cta__number { font-size: 1.2rem; }
+  .call-cta__btn { padding: 1rem 1.1rem; gap: .7rem; }
+}
+
+@media (max-width: 380px) {
+  /* On the very smallest phones, drop the Brochure text to icon-only so all 4 nav links breathe */
+  .header-cta { padding: .45rem .55rem; }
+  .header-cta { font-size: 0; gap: 0; }
+  .header-cta svg { display: inline-block; font-size: 16px; width: 16px; height: 16px; }
+  .primary-nav ul { gap: .8rem; }
+  .primary-nav a { font-size: .88rem; }
 }
 
 /* WordPress core alignment helpers */
