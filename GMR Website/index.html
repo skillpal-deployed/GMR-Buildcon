@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GMR Buildcon - Static Preview</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gmr-buildcon/style.css">
+<style>/* preview note banner */
+.preview-note{position:fixed;bottom:16px;left:16px;z-index:200;background:var(--ink);color:#fff;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:.5rem .9rem;border-radius:8px;opacity:.85}</style>
+</head>
+<body class="has-transparent-header">
+
+<header class="site-header" id="site-header">
+  <div class="container container--wide">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark">G</span>
+        <span class="brand__text"><span class="brand__name">GMR Buildcon</span><span class="brand__tag">Real Estate</span></span>
+      </a>
+      <nav class="primary-nav" id="primary-nav">
+        <ul class="menu">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a class="header-phone" href="tel:+919660637969"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+91 9660637969</span></a>
+        <a class="btn btn--gold header-cta" href="https://drive.google.com/file/d/1mvYolF4qDwva3NdZXIPZkH1SuMPEc9Bx/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Brochure <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+          <span class="label">Menu</span>
+          <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" id="nav-backdrop"></div>
+
+<main id="main">
+
+<section class="hero" id="hero">
+  <div class="hero__bg"></div>
+  <div class="container container--wide">
+    <div class="hero__inner">
+      <span class="hero__eyebrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Redwood Utopia &middot; Jagatpura, Jaipur</span>
+      <h1>A Symbol of <em>Trust, Quality</em><br>&amp; Innovation in Real Estate</h1>
+      <p class="hero__text">At the heart of every landmark development is a vision. Our homes are not just structures, but lifestyle experiences crafted with precision and care.</p>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="project-redwood.html">Explore Redwood Utopia <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn--outline" href="contact.html">Schedule a Tour</a>
+      </div>
+    </div>
+
+    <div class="hero__showcase reveal">
+      <img src="gmr-buildcon/assets/images/hero-render.png" alt="Redwood Utopia - low-rise residential development in Jagatpura, Jaipur" width="1916" height="739">
+      <div class="hero__badge">
+        <span class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/></svg></span>
+        <span>
+          <span class="b-num">48 Exclusive Units</span>
+          <span class="b-txt">Low-density living &middot; 0.29 acres</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat"><div class="num"><span data-count="48">48</span></div><div class="label">Exclusive Units</div></div>
+      <div class="hero__stat"><div class="num">0.29</div><div class="label">Acres Low-Density</div></div>
+      <div class="hero__stat"><div class="num">2 &amp; 3</div><div class="label">BHK Apartments</div></div>
+      <div class="hero__stat"><div class="num">Low-Rise</div><div class="label">Private Living</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="split">
+      <div class="split__media reveal">
+        <div class="framed"><img src="gmr-buildcon/assets/images/photo-1.jpg" alt="Interior of a Redwood Utopia home in Jagatpura, Jaipur" width="1280" height="853" loading="lazy"></div>
+        <div class="media-badge"><div class="num">100%</div><div class="txt">Customer-Centric Approach</div></div>
+      </div>
+      <div class="split__body reveal" data-delay="1">
+        <span class="eyebrow">About GMR Buildcon</span>
+        <h2 class="h-lg">Crafting landmark living, built on a foundation of trust</h2>
+        <p class="lead">GMR Buildcon stands as a symbol of trust, quality, and innovation in the real estate space.</p>
+        <p>With a strong track record of delivering thoughtfully designed residential and commercial projects, we focus on what matters most to the families who live in our developments. Our buildings are more than addresses - they are lifestyle experiences crafted with precision and care.</p>
+        <ul class="value-list">
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Timely delivery, every time</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Premium construction quality</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Customer-centric approach</li>
+          <li><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span> Modern architecture &amp; sustainable living</li>
+        </ul>
+        <p style="margin-top:1.75rem;"><a class="btn btn--outline" href="about.html">More About Us <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" id="project">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Signature Project</span>
+      <h2 class="h-lg">Redwood Utopia, Jagatpura</h2>
+      <p class="lead">A thoughtfully planned residential development offering the perfect balance of comfort, connectivity, and practicality - an ideal choice for both homeowners and investors.</p>
+    </div>
+    <div class="grid spec-grid">
+      <div class="spec-item reveal" data-delay="1"><div class="icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/></svg></div><div class="val">48</div><div class="key">Total Units</div></div>
+      <div class="spec-item reveal" data-delay="2"><div class="icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg></div><div class="val">2 &amp; 3 BHK</div><div class="key">Configuration</div></div>
+      <div class="spec-item reveal" data-delay="3"><div class="icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/></svg></div><div class="val">Low-Rise</div><div class="key">Apartments / Flats</div></div>
+      <div class="spec-item reveal" data-delay="4"><div class="icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l1.5-5h11L19 13M5 13h14v5H5z"/><circle cx="8" cy="18" r="1.5"/><circle cx="16" cy="18" r="1.5"/></svg></div><div class="val">48</div><div class="key">Parking Slots</div></div>
+    </div>
+    <div class="split" style="margin-top:clamp(2.5rem,6vw,4.5rem);">
+      <div class="split__body reveal">
+        <h3 class="h-md">Designed for modern urban living</h3>
+        <p>Spread across approximately <strong>0.29 acres</strong>, Redwood Utopia is a low-density project with just 48 exclusive units, ensuring a more private and peaceful living experience.</p>
+        <p>The development features well-designed 2 &amp; 3 BHK apartments, with smart layouts that maximize space, ventilation, and natural light - homes built for the way real families live.</p>
+        <p style="margin-top:1.5rem;"><a class="btn btn--gold" href="project-redwood.html">View Project Details <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+      </div>
+      <div class="split__media reveal" data-delay="1"><div class="framed framed--wide"><img src="gmr-buildcon/assets/images/photo-2.jpg" alt="Spacious 2 &amp; 3 BHK living space at Redwood Utopia" width="1280" height="853" loading="lazy"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="amenities">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Lifestyle &amp; Infrastructure</span>
+      <h2 class="h-lg">Amenities crafted for everyday comfort</h2>
+      <p class="lead">Thoughtfully designed common areas and reliable infrastructure that enhance everyday living - a serene atmosphere ideal for modern urban life.</p>
+    </div>
+    <div class="grid amenity-grid">
+      <div class="amenity-card reveal" data-delay="1"><div class="amenity-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6 6.5 6 10.8a6 6 0 0 1-12 0c0-4.3 6-10.8 6-10.8z"/></svg></div><h3>24x7 Water Supply</h3><p>Continuous and reliable water availability for a hassle-free lifestyle.</p></div>
+      <div class="amenity-card reveal" data-delay="2"><div class="amenity-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-6 8-11 16-11 0 8-5 16-11 16z"/><path d="M4 20c4-3 7-6 9-9"/></svg></div><h3>Rainwater Harvesting</h3><p>Sustainable infrastructure designed for efficient water management.</p></div>
+      <div class="amenity-card reveal" data-delay="3"><div class="amenity-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c2 4-2 5-2 8a4 4 0 0 0 8 0c0-1-1-2-1-3 2 1 3 3 3 6a8 8 0 0 1-16 0c0-5 5-7 5-11 1 0 2 1 3 1z"/></svg></div><h3>Fire Safety Systems</h3><p>Equipped with essential fire protection measures ensuring resident safety.</p></div>
+      <div class="amenity-card reveal" data-delay="1"><div class="amenity-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 17c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/><path d="M2 7c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></svg></div><h3>Storm Water Drainage</h3><p>Proper drainage systems to maintain hygiene and prevent waterlogging.</p></div>
+      <div class="amenity-card reveal" data-delay="2"><div class="amenity-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19 8 5"/><path d="M20 19 16 5"/><path d="M12 6v2"/><path d="M12 11v2"/><path d="M12 16v2"/></svg></div><h3>Internal Infrastructure</h3><p>Smooth internal planning for easy movement and daily convenience.</p></div>
+      <div class="amenity-card reveal" data-delay="3"><div class="amenity-card__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div><h3>Power Backup</h3><p>Uninterrupted functioning of essential services and common spaces.</p></div>
+    </div>
+    <div class="reveal" style="margin-top:clamp(2.5rem,5vw,3.5rem); text-align:center;">
+      <h3 class="h-md" style="margin-bottom:1.5rem;">Lifestyle Amenities</h3>
+      <div class="chip-grid" style="justify-content:center;">
+        <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M6 6l12 12M18 6 6 18"/></svg> Clubhouse with recreational facilities</span>
+        <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 6 10h3l-4 6h5v6h4v-6h5l-4-6h3z"/></svg> Landscaped gardens &amp; green spaces</span>
+        <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4V8z"/></svg> Children's play zone</span>
+        <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="5" r="2"/><path d="M7 21l3-6 3 2 1 4"/><path d="m10 15-2-4 5-2 3 3h3"/></svg> Jogging &amp; walking tracks</span>
+        <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l15-4 1.5 4L4.5 11 3 7z"/><path d="M4 11v4a2 2 0 0 0 2 2h4"/><circle cx="14" cy="18" r="2"/></svg> 24/7 security &amp; surveillance</span>
+        <span class="chip"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.3 5.8 20.9l1.6-6.8L2.2 9.5l6.9-.6L12 2z"/></svg> Common party / event area</span>
+      </div>
+      <p style="margin-top:2rem;"><a class="btn btn--outline" href="project-redwood.html#amenities">See All Amenities <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand" id="location">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Prime Connectivity</span>
+      <h2 class="h-lg">Everything you need, minutes away</h2>
+      <p class="lead">Located in the fast-growing locality of Jagatpura, Jaipur - surrounded by a calm, well-organized setting with seamless access to daily necessities.</p>
+    </div>
+    <div class="grid loc-grid">
+      <div class="loc-card reveal" data-delay="1"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></div><div><div class="dist">1.0 km</div><div class="place">University / College</div></div></div>
+      <div class="loc-card reveal" data-delay="2"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg></div><div><div class="dist">1.5 km</div><div class="place">Hospital</div></div></div>
+      <div class="loc-card reveal" data-delay="3"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="13" rx="3"/><path d="M9 16l-2 4M15 16l2 4M8 9h8"/></svg></div><div><div class="dist">1.0 km</div><div class="place">Railway Station</div></div></div>
+      <div class="loc-card reveal" data-delay="4"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="13" rx="2"/><path d="M4 11h16M7 17v3M17 17v3"/></svg></div><div><div class="dist">1.5 km</div><div class="place">Bus Station</div></div></div>
+      <div class="loc-card reveal" data-delay="1"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v8M19 10v8M9 10v8M15 10v8M3 21h18"/></svg></div><div><div class="dist">0.3 km</div><div class="place">Bank / ATM</div></div></div>
+      <div class="loc-card reveal" data-delay="2"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l5-5c1-1 1-2 .5-2.5S20 3 19 4l-5 5-8.2-1.8c-.5-.1-.9 0-1.2.3l-.7.7 6 3.2-3 3-2-.5-.8.8 3 1.5L9.3 22l.8-.8.5-2 3-3 3.2 6 .7-.7c.3-.3.4-.7.3-1.2z"/></svg></div><div><div class="dist">2.0 km</div><div class="place">Airport</div></div></div>
+      <div class="loc-card reveal" data-delay="3"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 3 5 8 5 8s5-5 5-8a5 5 0 0 0-5-5z"/><path d="M5 21h14"/></svg></div><div><div class="dist">0.3 km</div><div class="place">Children's Parks</div></div></div>
+      <div class="loc-card reveal" data-delay="4"><div class="loc-card__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 8-2 6-6 2 2-6 6-2z"/></svg></div><div><div class="dist">65</div><div class="place">Transit Score</div></div></div>
+    </div>
+    <div class="reveal" style="text-align:center;"><a class="btn btn--gold" href="project-redwood.html#location" style="margin-top:2.5rem;">Explore the Location <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-head center reveal"><span class="eyebrow">Gallery</span><h2 class="h-lg">A glimpse of Redwood Utopia</h2></div>
+    <div class="grid gallery reveal">
+      <div class="gallery__item wide tall"><img src="gmr-buildcon/assets/images/hero-render.png" alt="Redwood Utopia building exterior at golden hour" width="1916" height="739" loading="lazy"></div>
+      <div class="gallery__item"><img src="gmr-buildcon/assets/images/photo-1.jpg" alt="Living room interior at Redwood Utopia" width="1280" height="853" loading="lazy"></div>
+      <div class="gallery__item"><img src="gmr-buildcon/assets/images/photo-2.jpg" alt="Lounge and dining interior at Redwood Utopia" width="1280" height="853" loading="lazy"></div>
+      <div class="gallery__item wide"><img src="gmr-buildcon/assets/images/photo-3.jpg" alt="Private balcony with neighbourhood views" width="1280" height="853" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <img class="cta-banner__bg" src="gmr-buildcon/assets/images/hero-render.png" alt="" aria-hidden="true" loading="lazy">
+      <span class="eyebrow">Your new home awaits</span>
+      <h2>Ready to experience Redwood Utopia?</h2>
+      <p>Book a site visit, download the brochure, or talk to our team - we'll help you find the home that fits your life.</p>
+      <div class="cta-banner__actions">
+        <a class="btn btn--gold" href="contact.html">Schedule a Tour <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        <a class="btn btn--ghost-light" href="https://drive.google.com/file/d/1mvYolF4qDwva3NdZXIPZkH1SuMPEc9Bx/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download Brochure</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container container--wide">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <a class="brand" href="index.html"><span class="brand__mark">G</span><span class="brand__text"><span class="brand__name">GMR Buildcon</span><span class="brand__tag">Real Estate</span></span></a>
+        <p class="footer-about">A symbol of trust, quality, and innovation in real estate - crafting thoughtfully designed homes and lifestyle experiences in Jaipur.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61587108992934" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/gmr.buildcon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="https://www.linkedin.com/company/gmr-buildcon/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4"/></svg></a>
+          <a href="https://www.youtube.com/@GMRBuildcon-Redwood/shorts" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="project-redwood.html">Redwood Utopia</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul><li><a href="https://drive.google.com/file/d/1mvYolF4qDwva3NdZXIPZkH1SuMPEc9Bx/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download Brochure</a></li><li><a href="contact.html">Schedule a Tour</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Get in Touch</h4><ul class="footer-contact">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Plot No. F-7, Nilay Kunj, Jagatpura, Jaipur (Raj.)</span></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+919660637969">+91 9660637969</a></li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:info@gmrbuildcon.com">info@gmrbuildcon.com</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 GMR Buildcon. All Rights Reserved.</p><span>Symbol of trust, quality &amp; innovation in real estate.</span></div>
+  </div>
+</footer>
+
+<div class="preview-note">Static design preview - WordPress theme in /gmr-buildcon</div>
+<script src="gmr-buildcon/assets/js/main.js"></script>
+</body>
+</html>
