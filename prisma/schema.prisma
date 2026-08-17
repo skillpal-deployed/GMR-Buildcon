@@ -1,0 +1,92 @@
+// GMR Buildcon — PostgreSQL schema
+// Ported from the WordPress "project" CPT + project_status taxonomy + posts.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum ProjectStatus {
+  COMPLETED
+  ONGOING
+  UPCOMING
+}
+
+model Project {
+  id                Int           @id @default(autoincrement())
+  slug              String        @unique
+  title             String
+  status            ProjectStatus @default(UPCOMING)
+  excerpt           String?
+  content           String? // overview body (was post_content)
+  location          String?
+  tagline           String?
+  units             String?
+  config            String?
+  ptype             String?
+  parking           String?
+  transit           String?
+  map               String?
+  overviewHeading   String?
+  overviewLead      String?
+  brochure          String?
+  configs           Json? // [{ title, description }]
+  floorplanFeatures Json? // string[]
+  amCommunity       Json? // [{ title, description }]
+  amInfra           Json? // [{ title, description }]
+  amLifestyle       Json? // [{ title, description }]
+  places            Json? // [{ place, distance }]
+  heroImage         String?
+  floorplanImage    String?
+  gallery           Json? // string[]
+  isSample          Boolean       @default(false)
+  menuOrder         Int           @default(0)
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+
+  @@index([status])
+  @@index([menuOrder])
+}
+
+model Post {
+  id            Int      @id @default(autoincrement())
+  slug          String   @unique
+  title         String
+  excerpt       String?
+  content       String
+  featuredImage String?
+  author        String   @default("GMR Buildcon")
+  status        String   @default("published") // published | draft
+  publishedAt   DateTime @default(now())
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([status, publishedAt])
+}
+
+model ContactSubmission {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  phone     String?
+  interest  String?
+  message   String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}
+
+model User {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  name         String?
+  passwordHash String
+  role         String   @default("admin")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}

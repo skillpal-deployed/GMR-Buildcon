@@ -94,6 +94,9 @@ web_modules/
 .next
 out
 
+# Local embedded Postgres data (preview only)
+.localpg/
+
 # Nuxt.js build / generate output
 .nuxt
 dist
