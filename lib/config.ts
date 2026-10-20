@@ -29,11 +29,3 @@ export const primaryNav = [
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
-
-// Icons used by gmr_social_links()
-export const socialLinks = [
-  { key: "facebook", label: "Facebook", url: site.socials.facebook },
-  { key: "instagram", label: "Instagram", url: site.socials.instagram },
-  { key: "linkedin", label: "LinkedIn", url: site.socials.linkedin },
-  { key: "youtube", label: "YouTube", url: site.socials.youtube },
-] as const;

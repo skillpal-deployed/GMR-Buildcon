@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Icon from "./Icon";
-import { site, socialLinks, PRIMARY_PROJECT_SLUG } from "@/lib/config";
+import { site, PRIMARY_PROJECT_SLUG } from "@/lib/config";
 
 export default function SiteFooter() {
   const year = new Date().getFullYear();
@@ -19,19 +19,6 @@ export default function SiteFooter() {
               </span>
             </Link>
             <p className="footer-about">{site.about}</p>
-            <div className="footer-social">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.key}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label}
-                >
-                  <Icon name={s.key} size={18} />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div className="footer-col">
