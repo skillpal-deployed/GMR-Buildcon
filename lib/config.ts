@@ -6,7 +6,7 @@ export const site = {
   phone: "+91 9660637969",
   phoneLink: "+919660637969",
   email: "info@gmrbuildcon.com",
-  address: "Plot No. F-7, Nilay Kunj, Jagatpura, Jaipur (Raj.)",
+  address: "Jagatpura, Jaipur",
   brochure:
     "https://drive.google.com/uc?export=download&id=1mvYolF4qDwva3NdZXIPZkH1SuMPEc9Bx",
   about:
