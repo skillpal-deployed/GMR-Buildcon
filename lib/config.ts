@@ -11,12 +11,6 @@ export const site = {
     "https://drive.google.com/uc?export=download&id=1mvYolF4qDwva3NdZXIPZkH1SuMPEc9Bx",
   about:
     "A symbol of trust, quality, and innovation in real estate — crafting thoughtfully designed homes and lifestyle experiences in Jaipur.",
-  socials: {
-    facebook: "https://www.facebook.com/profile.php?id=61587108992934",
-    instagram: "https://www.instagram.com/gmr.buildcon",
-    linkedin: "https://www.linkedin.com/company/gmr-buildcon/",
-    youtube: "https://www.youtube.com/@GMRBuildcon-Redwood/shorts",
-  },
 } as const;
 
 // Stable slug of the flagship project — used for DB-free deep links (footer, etc.).

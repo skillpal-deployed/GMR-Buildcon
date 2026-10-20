@@ -36,14 +36,6 @@ export const ICON_PATHS: Record<string, string> = {
   plane:
     '<path d="M17.8 19.2 16 11l5-5c1-1 1-2 .5-2.5S20 3 19 4l-5 5-8.2-1.8c-.5-.1-.9 0-1.2.3l-.7.7 6 3.2-3 3-2-.5-.8.8 3 1.5L9.3 22l.8-.8.5-2 3-3 3.2 6 .7-.7c.3-.3.4-.7.3-1.2z"/>',
   park: '<path d="M12 2a5 5 0 0 0-5 5c0 3 5 8 5 8s5-5 5-8a5 5 0 0 0-5-5z"/><path d="M5 21h14"/>',
-  facebook:
-    '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
-  instagram:
-    '<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/>',
-  linkedin:
-    '<rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 0 1 4 0v4M11 13v4"/>',
-  youtube:
-    '<rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9z" fill="currentColor" stroke="none"/>',
   menu: '<path d="M3 6h18M3 12h18M3 18h18"/>',
   building:
     '<rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/>',
